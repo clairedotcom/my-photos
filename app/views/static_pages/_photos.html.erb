@@ -1,1 +1,4 @@
-<%= @photos %>
+<% @photos.each do |photo| %>
+  <% url ="http://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
+  <img src=<%= url %>>
+<% end %>

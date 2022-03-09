@@ -1,6 +1,6 @@
 <%= form_with url: "/index", method: :get do |f| %>
   <%= f.text_field :user_id, placeholder: "Flickr User ID" %>
-  <%= f.submit %>
+  <%= f.submit "Get Photos" %>
 <% end %>
 
 <% if params.has_key?(:commit) %>
